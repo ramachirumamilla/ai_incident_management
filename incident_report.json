@@ -1,0 +1,314 @@
+{
+  "notice": "MCP plugins are placeholders; no external systems were queried or changed.",
+  "activation": {
+    "incident_id": "INC-DEMO-001",
+    "status": "INVESTIGATING",
+    "coordination_checklist": [
+      "Confirm incident commander and technical decision owner",
+      "Engage service owner, SRE, support, and business representative",
+      "Start timeline, decision log, and action tracker",
+      "Confirm customer and business impact",
+      "Set stakeholder-update cadence"
+    ]
+  },
+  "plugin_health": [
+    {
+      "plugin": "jira-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "releases",
+        "milestones",
+        "dependencies",
+        "delivery-risk"
+      ]
+    },
+    {
+      "plugin": "servicenow-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "incidents",
+        "changes",
+        "problems"
+      ]
+    },
+    {
+      "plugin": "confluence-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "runbooks",
+        "ownership",
+        "past-incidents"
+      ]
+    },
+    {
+      "plugin": "pagerduty-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "on-call",
+        "escalations"
+      ]
+    },
+    {
+      "plugin": "teams-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "communications",
+        "decisions",
+        "action-items"
+      ]
+    },
+    {
+      "plugin": "datadog-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "business-dashboards",
+        "service-health"
+      ]
+    },
+    {
+      "plugin": "splunk-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "technical-summaries",
+        "incident-context"
+      ]
+    },
+    {
+      "plugin": "github-deployment-mcp",
+      "connected": false,
+      "mode": "PLACEHOLDER",
+      "capabilities": [
+        "deployments",
+        "release-correlation"
+      ]
+    }
+  ],
+  "plugin_context": [
+    {
+      "plugin": "jira-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "servicenow-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "confluence-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "pagerduty-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "teams-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "datadog-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "splunk-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    },
+    {
+      "plugin": "github-deployment-mcp",
+      "connected": false,
+      "synthetic_data": false,
+      "status": "NO_LIVE_CONTEXT",
+      "incident_id": "INC-DEMO-001",
+      "message": "Configure this MCP plugin to retrieve live context."
+    }
+  ],
+  "stakeholder_update_before_recovery": "INCIDENT UPDATE\n\nIncident: Orders Not Getting Placed\nSeverity: SEV-1\nStatus: INVESTIGATING\n\nCurrent situation: Customers cannot successfully place orders.\nCustomer impact: Customers are unable to place orders.\nBusiness impact: Revenue-generating transactions are disrupted.\nTechnical response: Engineering owns diagnosis and recovery decisions.\nTPM coordination: Owners, decisions, risks, communications, and delivery impacts are tracked.\nNext update: 15 minutes",
+  "stakeholder_update_after_recovery": "INCIDENT UPDATE\n\nIncident: Orders Not Getting Placed\nSeverity: SEV-1\nStatus: MONITORING\n\nCurrent situation: The recovery action has been completed. Customers can successfully place orders again. Teams are validating that the customer experience remains stable.\nCustomer impact: Customers are unable to place orders.\nBusiness impact: Revenue-generating transactions are disrupted.\nTechnical response: Engineering owns diagnosis and recovery decisions.\nTPM coordination: Owners, decisions, risks, communications, and delivery impacts are tracked.\nNext update: After stability validation",
+  "final_report": {
+    "incident": {
+      "incident_id": "INC-DEMO-001",
+      "title": "Orders Not Getting Placed",
+      "severity": "SEV-1",
+      "service": "Order Processing Service",
+      "status": "RESOLVED",
+      "customer_impact": "Customers are unable to place orders.",
+      "business_impact": "Revenue-generating transactions are disrupted.",
+      "resolution": "Order placement recovered after the Order Processing Service was restarted."
+    },
+    "investigations": [
+      {
+        "name": "Coordinate Order Service assessment",
+        "owner": "Order Service Lead",
+        "status": "IN_PROGRESS",
+        "latest_update": "",
+        "blocker": null
+      },
+      {
+        "name": "Confirm platform and dependency status",
+        "owner": "SRE Lead",
+        "status": "IN_PROGRESS",
+        "latest_update": "",
+        "blocker": null
+      },
+      {
+        "name": "Assess customer impact",
+        "owner": "Customer Support Lead",
+        "status": "IN_PROGRESS",
+        "latest_update": "",
+        "blocker": null
+      }
+    ],
+    "decisions": [
+      {
+        "timestamp": "2026-10-05T05:29:44.125665+00:00",
+        "decision": "Restart the Order Processing Service",
+        "owner": "Authorized Engineering Lead",
+        "rationale": "Engineering selected a service restart as the recovery action.",
+        "approval": "Approved by authorized technical owner"
+      }
+    ],
+    "delivery_risks": [],
+    "follow_up_actions": [
+      {
+        "action_id": "dc7ddb87-a890-4648-ab8c-b73fc06d3c09",
+        "description": "Determine why the service became unresponsive",
+        "owner": "Order Service Lead",
+        "due_date": "TBD",
+        "priority": "P1",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "27c2100e-b102-4c44-b68b-c4fa01d4bd7e",
+        "description": "Review service health monitoring and alert coverage",
+        "owner": "SRE Lead",
+        "due_date": "TBD",
+        "priority": "P1",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "61c4835c-e1a5-4365-80be-e1ea5cb6363b",
+        "description": "Update the recovery runbook",
+        "owner": "Service Owner",
+        "due_date": "TBD",
+        "priority": "P2",
+        "status": "OPEN"
+      },
+      {
+        "action_id": "287242c0-f376-4586-a185-7b77dd22d8d5",
+        "description": "Facilitate post-incident review and track closure",
+        "owner": "TPM",
+        "due_date": "TBD",
+        "priority": "P2",
+        "status": "OPEN"
+      }
+    ],
+    "timeline": [
+      {
+        "timestamp": "2026-10-05T05:29:44.125613+00:00",
+        "category": "ACTIVATION",
+        "summary": "SEV-1 incident activated",
+        "owner": "TPM"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125636+00:00",
+        "category": "CONTEXT",
+        "summary": "Requested context from configured MCP plugins",
+        "owner": "Agent"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125645+00:00",
+        "category": "OWNERSHIP",
+        "summary": "Assigned investigation: Coordinate Order Service assessment",
+        "owner": "Order Service Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125650+00:00",
+        "category": "OWNERSHIP",
+        "summary": "Assigned investigation: Confirm platform and dependency status",
+        "owner": "SRE Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125654+00:00",
+        "category": "OWNERSHIP",
+        "summary": "Assigned investigation: Assess customer impact",
+        "owner": "Customer Support Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125670+00:00",
+        "category": "DECISION",
+        "summary": "Restart the Order Processing Service",
+        "owner": "Authorized Engineering Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125673+00:00",
+        "category": "MONITORING",
+        "summary": "Restart completed; orders processing normally; stability validation in progress.",
+        "owner": "Engineering Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125683+00:00",
+        "category": "RESOLUTION",
+        "summary": "Order placement recovered after the Order Processing Service was restarted.",
+        "owner": "Authorized Engineering Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125709+00:00",
+        "category": "FOLLOW_UP",
+        "summary": "Determine why the service became unresponsive",
+        "owner": "Order Service Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125721+00:00",
+        "category": "FOLLOW_UP",
+        "summary": "Review service health monitoring and alert coverage",
+        "owner": "SRE Lead"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125730+00:00",
+        "category": "FOLLOW_UP",
+        "summary": "Update the recovery runbook",
+        "owner": "Service Owner"
+      },
+      {
+        "timestamp": "2026-10-05T05:29:44.125737+00:00",
+        "category": "FOLLOW_UP",
+        "summary": "Facilitate post-incident review and track closure",
+        "owner": "TPM"
+      }
+    ]
+  }
+}
