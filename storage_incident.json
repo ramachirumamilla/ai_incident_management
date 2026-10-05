@@ -1,0 +1,12 @@
+{
+  "incident_id": "INC-60001",
+  "title": "Storage Capacity Alert",
+  "severity": "SEV-2",
+  "service": "Enterprise Storage Platform",
+  "customer_impact": "Potential performance degradation",
+  "business_impact": "Risk of outage",
+  "symptoms": [
+    "Storage utilization reached 97%",
+    "Capacity alert triggered"
+  ]
+}
