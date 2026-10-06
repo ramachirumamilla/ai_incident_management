@@ -1,0 +1,71 @@
+{
+  "application_name": "Customer Account Platform",
+  "application_id": "APP-001",
+  "application_type": ".NET",
+
+  "business_owner": "Stock Trading",
+  "technical_owner": "Application Team A",
+
+  "hosting": "On-Premises",
+  "primary_datacenter": "DC-East",
+  "secondary_datacenter": "DC-West",
+
+  "servers": 25,
+
+  "database": "PostgreSQL",
+  "database_size_tb": 8,
+
+  "business_criticality": "Tier-1",
+  "customer_facing": true,
+
+  "availability_requirement": "99.95%",
+  "rpo_minutes": 5,
+  "rto_minutes": 60,
+
+  "annual_transaction_volume": "15M",
+  "peak_transactions_per_day": "120K",
+
+  "current_release_frequency": "Biweekly",
+
+  "dependencies": [
+    "Authentication Service",
+    "Reporting Platform",
+    "Payment Gateway"
+  ],
+
+  "shared_database": true,
+
+  "external_vendors": [
+    "Payment Gateway Provider"
+  ],
+
+  "authentication_method": "SSO",
+
+  "integrations": [
+    "Customer Portal",
+    "Fraud Detection Service"
+  ],
+
+  "security_classification": "Confidential",
+
+  "regulatory_requirements": [
+    "PCI",
+    "SOX"
+  ],
+
+  "source_code_repository": "GitHub Enterprise",
+
+  "ci_cd_pipeline": "GitHub",
+
+  "containerized": false,
+
+  "current_cpu_utilization": "65%",
+  "current_memory_utilization": "70%",
+
+  "migration_deadline": "6 Months",
+
+  "known_issues": [
+    "Tight coupling with reporting system",
+    "Shared schema dependency"
+  ]
+}
